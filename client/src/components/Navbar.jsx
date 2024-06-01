@@ -16,26 +16,26 @@ const Navbar = () => {
     }
 
   return (
-    <div className='fixed top-0 w-full'>
+    <div className='fixed top-0 w-full z-50'>
         {/* On large  and extra large devices only */}
         <div className="mt-6 w-full items-center hidden md:flex">
             <div className="w-1/6 mx-4">
                 <img src={Logo} alt='logo' className='w-1/3' />
             </div>
-            <div className="w-1/2 flex text-sm text-gray-800 justify-end">
-                <a href="#" className="p-2">What we do</a>
-                <a href="#" className="p-2">Pricing</a>
-                <a href="#" className="p-2">About Us</a>
-                <a href="#" className="p-2">Contact Us</a>
+            <div className="w-1/2 flex text-sm text-gray-600 justify-end">
+                <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">What we do</a>
+                <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">Pricing</a>
+                <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">About Us</a>
+                <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">Contact Us</a>
             </div>
             <div className="w-1/3 mx-4 flex text-sm justify-end">
-                <button className="px-4 border border-gray-400 text-gray-800  mx-6 h-12 rounded-lg">Login</button>
-                <button className="px-4  h-12 bg-purple-700 text-white rounded-lg">Sign Up</button>
+                <button className="px-4 border border-gray-400 text-gray-800  mx-6 h-10 rounded-lg">Login</button>
+                <button className="px-4 h-10 bg-purple-700 text-white rounded-lg">Sign Up</button>
             </div>
         </div>
 
         {/* On small and medium devices only */}
-        <div className="flex mt-6 w-full justify-between items-center md:hidden">
+        <div className="flex mt-6 w-full justify-between bg-transparent items-center md:hidden">
             <div className="w-1/6 mx-4">
                 <img src={Logo} alt='logo' className='w-2/3' />
             </div>
