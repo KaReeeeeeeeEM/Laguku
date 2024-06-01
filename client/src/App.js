@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+
+//components
+import Hero from './components/Hero';
+
+//css files
+import './App.css';
+import './output.css';
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Hero />
     </div>
   )
 }
