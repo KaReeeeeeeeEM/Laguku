@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 //components
 import Hero from './components/Hero';
@@ -9,9 +10,11 @@ import './output.css';
 
 const App = () => {
   return (
-    <div>
-      <Hero />
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+        </Routes>
+      </BrowserRouter>
   )
 }
 
