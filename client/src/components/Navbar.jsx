@@ -22,15 +22,15 @@ const Navbar = () => {
             <div className="w-1/6 mx-4">
                 <img src={Logo} alt='logo' className='w-1/3' />
             </div>
-            <div className="w-1/2 flex text-sm text-gray-600 justify-end">
+            <div className="w-1/2 flex text-lg text-gray-100 justify-end">
                 <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">What we do</a>
                 <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">Pricing</a>
                 <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">About Us</a>
                 <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">Contact Us</a>
             </div>
-            <div className="w-1/3 mx-4 flex text-sm justify-end">
-                <button className="px-4 border border-gray-400 text-gray-800  mx-6 h-10 rounded-lg">Login</button>
-                <button className="px-4 h-10 bg-purple-700 text-white rounded-lg">Sign Up</button>
+            <div className="w-1/3 mx-4 flex text-lg justify-end">
+                <button className="px-4 border border-gray-400 hover:border-purple-500 hover:text-purple-300 transition ease-in-out duration-700 text-gray-200 mx-6 h-10 rounded-lg">Login</button>
+                <button className="px-4 h-10 bg-purple-700 text-white transition ease-in-out duration-700 hover:opacity-80 rounded-lg">Sign Up</button>
             </div>
         </div>
 
@@ -42,7 +42,7 @@ const Navbar = () => {
             
             <div className='w-1/2 mx-4'>
                 <div onClick={openLinks}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 float-right cursor-pointer text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 float-right cursor-pointer text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </div>

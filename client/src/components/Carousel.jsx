@@ -1,102 +1,98 @@
 import React from 'react';
-import { Carousel } from 'antd';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-const contentStyle = {
-  width: '100%',
-  height: '75vh',
-  color: 'purple',
-  display: 'flex',
-  justifyContent: 'space-around',
-  alignItems: 'center',
-  background: '#ddd',
-};
+//import images
+import image from '../img/image.png';
 
-const Slider = () => (
-  <Carousel autoplay>
-    {/* Corousel 1 */}
+// import required modules
+import { Parallax, Pagination, Navigation } from 'swiper/modules';
+
+export default function Corousel() {
+  return (
     <div>
-      <div style={contentStyle}>
-        <div className='md:w-1/2 px-8 text-gray-800'>
-        <div>
-            <h1 className='text-4xl'>This is slide 1</h1>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minus laudantium, cupiditate temporibus necessitatibus quaerat dolorum 
-                beatae aliquid cumque nihil maiores quibusdam explicabo similique, 
-                placeat nam non autem id atque officia.
+      <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
+        speed={600}
+        parallax={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Parallax, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <div
+          slot="container-start"
+          className="parallax-bg"
+          style={{
+            backgroundImage: `url(${image})`,
+            filter: 'blur(4px)',
+            filter: 'brightness(0.5)',
+          }}
+          data-swiper-parallax="-23%"
+        ></div>
+        <SwiperSlide>
+          <div className="title md:text-5xl md:mt-16" data-swiper-parallax="-300">
+            Discover <span className='text-pink-500'>New</span> Music
+          </div>
+          <div className="text-sm md:text-lg md:w-4/5" data-swiper-parallax="-100">
+            <p>
+              Welcome to our platform, where discovering new music is just a click away. We provide a vast collection of tracks from emerging and established artists worldwide.
             </p>
-        </div>
-        </div>
-        <div className='w-1/3 px-8 bg-purple-100 h-1/2 hidden md:block'>
-            <img className='w-full' src='https://images.unsplash.com/photo-1612833837879-7c8f6b3d4d1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' alt='slide 1' />
-        </div>
-      </div>
-    </div>
-    
-    {/* Corousel 2 */}
-    <div>
-      <div style={contentStyle}>
-        <div className='w-1/3 px-8 bg-purple-100 h-1/2 hidden md:block'>
-            <img className='w-full' src='https://images.unsplash.com/photo-1612833837879-7c8f6b3d4d1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' alt='slide 2' />
-        </div>
-        <div className='md:w-1/2 px-8 text-gray-800'>
-        <div>
-            <h1 className='text-4xl'>This is slide 2</h1>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minus laudantium, cupiditate temporibus necessitatibus quaerat dolorum 
-                beatae aliquid cumque nihil maiores quibusdam explicabo similique, 
-                placeat nam non autem id atque officia.
+          </div>
+          <div className="subtitle mb-2" data-swiper-parallax="-200">
+            Your Next Favorite Song Awaits
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="title md:text-5xl md:mt-16" data-swiper-parallax="-300">
+            Stream <span className='text-pink-300'>Anywhere</span>
+          </div>
+          <div className="text-sm md:text-lg md:w-4/5" data-swiper-parallax="-100">
+            <p>
+              Our service allows you to stream music on any device, anytime, anywhere. Enjoy seamless listening experiences with our high-quality streaming service.
             </p>
-        </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Corousel 3 */}
-    <div>
-      <div style={contentStyle}>
-      <div className='md:w-1/2 px-8 text-gray-800 md:bg-none'>
-        <div>
-            <h1 className='text-4xl'>This is slide 3</h1>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minus laudantium, cupiditate temporibus necessitatibus quaerat dolorum 
-                beatae aliquid cumque nihil maiores quibusdam explicabo similique, 
-                placeat nam non autem id atque officia.
+          </div>
+          <div className="subtitle" data-swiper-parallax="-200">
+            Music On The Go
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="title md:text-5xl md:mt-16" data-swiper-parallax="-300">
+            Artist <span className='text-purple-500'>Support</span> 
+          </div>
+          <div className="text-sm md:text-lg md:w-4/5" data-swiper-parallax="-100">
+            <p>
+              We believe in supporting artists. Our platform offers tools for artists to distribute their music, reach new audiences, and earn revenue from their art.
             </p>
-        </div>
-        </div>
-        <div className='w-1/3 px-8 bg-purple-100 h-1/2 hidden md:block'>
-            <img className='w-full' src='https://images.unsplash.com/photo-1612833837879-7c8f6b3d4d1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' alt='slide 3' />
-        </div>
-      </div>
-    </div>
-
-    {/* Corousel 4 */}
-    <div>
-      <div style={contentStyle}>
-        <div className='w-1/3 px-8 bg-purple-100 h-1/2 hidden md:block'>
-            <img className='w-full' src='https://images.unsplash.com/photo-1612833837879-7c8f6b3d4d1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60' alt='slide 4' />
-        </div>
-        <div className='md:w-1/2 px-8 text-gray-800'>
-        <div>
-            <h1 className='text-4xl'>This is slide 4</h1>
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minus laudantium, cupiditate temporibus necessitatibus quaerat dolorum 
-                beatae aliquid cumque nihil maiores quibusdam explicabo similique, 
-                placeat nam non autem id atque officia.
+          </div>
+          <div className="subtitle" data-swiper-parallax="-200">
+            Empowering Musicians
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="title md:text-5xl md:mt-16" data-swiper-parallax="-300">
+          <span className='text-blue-500'>Join</span>  Our Community
+          </div>
+          <div className="text-sm md:text-lg md:w-4/5" data-swiper-parallax="-100">
+            <p>
+              Be a part of a vibrant community of music lovers and creators. Connect, share, and discover together on our platform.
             </p>
-        </div>
-        </div>
-      </div>
+          </div>
+          <div className="subtitle" data-swiper-parallax="-200">
+            Music Brings Us Together
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
-  </Carousel>
-);
-export default Slider;
+  );
+}
