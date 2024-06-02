@@ -8,10 +8,11 @@ import Showcase from './Showcase'
 import Feed from './Feed'
 import VideoIframe from './Video'
 import Testimonials from './Testimonials'
+import CTA from './CTA'
+import Footer from './Footer'
 
 //images
 import image from '../img/image.png'
-import CTA from './CTA'
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         />
         <Testimonials />
         <CTA />
+        <Footer />
     </div>
   )
 }
