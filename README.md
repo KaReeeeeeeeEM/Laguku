@@ -1,3 +1,3 @@
 # Laguku
 
-Check the live site at (Laguku)[https://laguku.vercel.app]
+Check the live site at https://laguku.vercel.app
