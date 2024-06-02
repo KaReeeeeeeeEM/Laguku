@@ -55,6 +55,9 @@ export default function Feed() {
         </div>
     </div>
     <div className="bg-indigo-50 lg:w-full lg:mr-8 py-16 mb-12 align-start">
+        <span>
+            <img src={spikes} alt="spikes" className='w-12 md:w-32 md:h-24 h-12 absolute right-12 -mt-20 md:-mt-24' />
+        </span>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-extrabold leading-7 uppercase text-purple-600">Why Laguku</h2>
