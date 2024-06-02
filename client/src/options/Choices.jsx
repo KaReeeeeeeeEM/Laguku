@@ -10,7 +10,6 @@ const Choices = () => {
     <div>
         <Navbar />
         <OptionsBody />
-        <Footer />
     </div>
   )
 }
