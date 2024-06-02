@@ -43,7 +43,7 @@ const SignUp = () => {
                         <input type='text' placeholder='Enter your username' className='p-2 my-4 border-2 border-gray-300 outline-none focus:border-purple-600 rounded' autoFocus />
 
                         <span className='text-gray-800'>Email</span>
-                        <input type='email' placeholder='Please enter a valid email' className='p-2 my-4 border-2 border-gray-300 outline-none focus:border-purple-600 rounded' autoFocus />
+                        <input type='email' placeholder='Please enter a valid email' className='p-2 my-4 border-2 border-gray-300 outline-none focus:border-purple-600 rounded'/>
 
                         <span className='text-gray-800'>Password</span>
                         <input type='password' placeholder='Please enter password' className='p-2 my-4 border-2 border-gray-300 outline-none focus:border-purple-600 rounded' />
