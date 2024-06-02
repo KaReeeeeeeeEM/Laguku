@@ -6,8 +6,8 @@ const Footer = () => {
       <div className='fixed flex justify-between items-center bottom-0 w-full'>
         <div>
           <h2 className='text-gray-800 text-xs font-extrabold flex md:hidden'>Copyright {new Date().getFullYear()} <br />
-            Laguku by JoKareem <br />
-            Privacy Policy Terms of Services </h2>
+            Laguku by JoKareem 
+            </h2>
         </div>
         <div className='absolute left-0 pl-4'>
           <h2 className='md:flex text-gray-800 md:justify-start text-sm font-extrabold hidden'>
