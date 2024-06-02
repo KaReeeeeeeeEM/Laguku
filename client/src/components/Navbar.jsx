@@ -29,7 +29,7 @@ const Navbar = () => {
                 <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">Contact Us</a>
             </div>
             <div className="w-1/3 mx-4 flex text-lg justify-end">
-                <button className="px-4 border border-gray-400 hover:border-purple-500 hover:text-purple-300 transition ease-in-out duration-700 text-gray-200 mx-6 h-10 rounded-lg">Login</button>
+                <button className="px-4 border-2 border-gray-400 hover:border-purple-500 hover:text-purple-300 transition ease-in-out duration-700 text-gray-200 mx-6 h-10 rounded-lg">Login</button>
                 <button className="px-4 h-10 bg-purple-700 text-white transition ease-in-out duration-700 hover:opacity-80 rounded-lg">Sign Up</button>
             </div>
         </div>
