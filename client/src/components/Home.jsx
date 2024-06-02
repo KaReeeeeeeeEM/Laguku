@@ -1,16 +1,22 @@
 import React from 'react'
 
 //components
-import Hero from './Hero';
-import About from './About';
+import Navbar from './Navbar'
+import Carousel from './Carousel'
+import About from './About'
+import Showcase from './Showcase'
+import Feed from './Feed'
 
-const Home = () => {
+const Hero = () => {
   return (
     <div>
-        <Hero />
+        <Navbar />
+        <Carousel />
         <About />
+        <Showcase />
+        <Feed />
     </div>
   )
 }
 
-export default Home
+export default Hero

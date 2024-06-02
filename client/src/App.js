@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 //components
-import Hero from './components/Hero';
+import Hero from './components/Home';
 import Error404 from './components/Error404';
 
 //css files

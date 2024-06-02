@@ -23,9 +23,9 @@ const About = () => {
     </div>
     <div className='mb-4 flex justify-center items-center'>
         <a href="#">
-            <button className='px-6 py-1 bg-purple-900 text-white text-xl font-bold rounded-full transition ease-in-out duration-700 hover:opacity-80'>
+            <button className='px-6 py-2 bg-purple-900 text-white text-lg font-bold rounded-full transition ease-in-out duration-700 hover:opacity-80'>
                 Explore Artist 
-                <span className='text-3xl'>&#8594;</span>    
+                <span className='text-3xl ml-2'>&#8594;</span>    
             </button>
         </a>
     </div>
