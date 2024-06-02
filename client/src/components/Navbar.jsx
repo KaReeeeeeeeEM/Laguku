@@ -29,8 +29,12 @@ const Navbar = () => {
                 <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-500">Contact Us</a>
             </div>
             <div className="w-1/3 mx-4 flex text-lg justify-end">
-                <button className="px-4 border-2 border-gray-400 hover:border-purple-500 hover:text-purple-300 transition ease-in-out duration-700 text-gray-200 mx-6 h-10 rounded">Login</button>
-                <button className="px-6 h-10 bg-purple-700 text-white transition ease-in-out duration-700 hover:opacity-80 rounded">Sign Up</button>
+                <a href='/auth/signin'>
+                    <button className="px-4 border-2 border-gray-400 hover:border-purple-500 hover:text-purple-300 transition ease-in-out duration-700 text-gray-200 mx-6 h-10 rounded">Login</button>
+                </a>
+                <a href='/auth/signup'>
+                    <button className="px-6 h-10 bg-purple-700 text-white transition ease-in-out duration-700 hover:opacity-80 rounded">Sign Up</button>
+                </a>
             </div>
         </div>
 
@@ -52,8 +56,12 @@ const Navbar = () => {
                     <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-600">About Us</a>
                     <a href="#" className="p-2 transition ease-in-out duration-700 hover:text-purple-600">Contact Us</a>
                     <div className="w-full flex flex-col mt-8 text-xs items-end">
-                        <button className="px-8 py-2 w-full border border-gray-400 text-gray-800 rounded-lg transition ease-in-out duration-700 hover:border-purple-700">Login</button>
-                        <button className="px-8 py-2 w-full mt-2 h-8 bg-purple-700 text-white rounded-lg transition ease-in-out duration-700 hover:opacity-80">SignUp</button>
+                        <a href='/auth/signin'>
+                            <button className="px-8 py-2 w-full border border-gray-400 text-gray-800 rounded-lg transition ease-in-out duration-700 hover:border-purple-700">Login</button>
+                        </a>
+                        <a href='/auth/signup'>
+                            <button className="px-8 py-2 w-full mt-2 h-8 bg-purple-700 text-white rounded-lg transition ease-in-out duration-700 hover:opacity-80">SignUp</button>
+                        </a>
                     </div>
                 </div>
             </div>
