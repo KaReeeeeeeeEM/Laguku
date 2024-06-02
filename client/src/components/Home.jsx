@@ -11,6 +11,7 @@ import Testimonials from './Testimonials'
 
 //images
 import image from '../img/image.png'
+import CTA from './CTA'
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
           iframeTitle="My Video"
         />
         <Testimonials />
+        <CTA />
     </div>
   )
 }
