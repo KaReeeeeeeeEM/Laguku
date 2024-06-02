@@ -8,6 +8,7 @@ import Error404 from './components/Error404';
 //pages
 import SignIn from './auth/SignIn';
 import SignUp from './auth/SignUp';
+import Choices from './options/Choices';
 
 //css files
 import './App.css';
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Hero />} />
           <Route path="/auth/signup" element={<SignUp />} />
           <Route path="/auth/signin" element={<SignIn />} />
+          <Route path="/options" element={<Choices />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
       </BrowserRouter>

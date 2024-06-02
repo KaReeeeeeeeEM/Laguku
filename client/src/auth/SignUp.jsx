@@ -50,8 +50,10 @@ const SignUp = () => {
 
                         <span className='text-gray-800'>Confirm Password</span>
                         <input type='password' placeholder='Confirm password' className='p-2 my-4 border-2 border-gray-300 outline-none focus:border-purple-600 rounded' />
-
-                        <button className='bg-purple-600 text-white p-2 rounded'>Continue</button>
+                        
+                        <a href='/options' className='bg-purple-600 text-white p-2 rounded text-center'>
+                            Continue
+                        </a>
                     </div>
                     <div className='mx-16 mt-8 text-center'>
                          <span className='text-gray-600 my-4 text-center'>Already have an account? <a href='/auth/signin' className='text-purple-600 font-bold'>Sign In</a></span>
