@@ -7,11 +7,12 @@ import About from './About'
 import Showcase from './Showcase'
 import Feed from './Feed'
 import VideoIframe from './Video'
+import Testimonials from './Testimonials'
 
 //images
 import image from '../img/image.png'
 
-const Hero = () => {
+const Home = () => {
   return (
     <div>
         <Navbar />
@@ -24,8 +25,9 @@ const Hero = () => {
           thumbnailSrc={image}
           iframeTitle="My Video"
         />
+        <Testimonials />
     </div>
   )
 }
 
-export default Hero
+export default Home

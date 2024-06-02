@@ -8,10 +8,10 @@ const VideoIframe = ({ iframeSrc, thumbnailSrc, iframeTitle }) => {
   };
 
   return (
-    <div className="relative flex items-center justify-center w-5/6 mx-auto h-48 md:h-96 pb-9/16"> {/* 16:9 Aspect Ratio */}
+    <div className="relative flex items-center justify-center w-6/7 mx-auto mb-48 h-60 md:h-96 pb-9/16"> {/* 16:9 Aspect Ratio */}
       {!isIframeVisible ? (
         <div
-          className="absolute inset-0 w-full h-full mx-auto my-10 flex justify-center items-center cursor-pointer"
+          className="absolute inset-0 w-full h-full mx-auto mt-10 flex justify-center items-center cursor-pointer"
           onClick={handleThumbnailClick}
           style={{ backgroundImage: `url(${thumbnailSrc})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
@@ -26,7 +26,7 @@ const VideoIframe = ({ iframeSrc, thumbnailSrc, iframeTitle }) => {
         <iframe
           src={iframeSrc}
           title={iframeTitle}
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-96 mb-24"
           allowFullScreen
         ></iframe>
       )}

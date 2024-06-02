@@ -31,10 +31,10 @@ export default function Corousel() {
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
         }}
-        speed={600}
+        speed={800}
         parallax={true}
         autoplay={{
-          delay: 5000,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -98,7 +98,7 @@ export default function Corousel() {
           </div>
           <div className="text-sm md:text-lg md:w-4/5" data-swiper-parallax="-100" style={textAnimation}>
             <p>
-              Be a part of a vibrant community of music lovers and creators. Connect, share, and discover together on our platform.
+              Be a part of a vibrant community of music lovers and creators. Connect, share, and discover together on our platform. You are just one click away!
             </p>
           </div>
           <div className="subtitle" data-swiper-parallax="-200" style={subtitleAnimation}>

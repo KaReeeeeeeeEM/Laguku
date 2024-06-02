@@ -73,7 +73,7 @@ export default function Feed() {
             {features.map((feature) => (
               <div key={feature.name} className="relative md:ml-24 px-16 py-4 transform ease-in-out duration-500 bg-white hover:cursor-pointer hover:scale-105 rounded-lg shadow-md">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 m-4 rounded-full items-center justify-center bg-purple-300">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 m-4 rounded-full items-center font-extrabold justify-center bg-purple-300">
                     <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                   </div>
                   {feature.name}
