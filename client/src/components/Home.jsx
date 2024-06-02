@@ -6,6 +6,10 @@ import Carousel from './Carousel'
 import About from './About'
 import Showcase from './Showcase'
 import Feed from './Feed'
+import VideoIframe from './Video'
+
+//images
+import image from '../img/image.png'
 
 const Hero = () => {
   return (
@@ -15,6 +19,11 @@ const Hero = () => {
         <About />
         <Showcase />
         <Feed />
+        <VideoIframe 
+          iframeSrc={image}
+          thumbnailSrc={image}
+          iframeTitle="My Video"
+        />
     </div>
   )
 }
