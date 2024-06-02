@@ -4,6 +4,7 @@ import React from 'react'
 import option1 from '../img/option1.png'
 import option2 from '../img/option2.png'
 import option3 from '../img/option3.png'
+import artBottom from '../img/artBottom.png'
 
 const OptionsBody = () => {
   return (
@@ -25,6 +26,7 @@ const OptionsBody = () => {
                 <img src={option3} alt='option' className='w-1/2 lg:w-4/5' />
                 <h1 className='text-lg font-extrabold'>Content Creator</h1>
             </div>
+            <img src={artBottom} alt='art' className='w-1/3 -z-10 absolute bottom-0 left-0' />
         </div>
     </div>
   )
