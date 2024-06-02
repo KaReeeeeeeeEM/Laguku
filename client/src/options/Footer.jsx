@@ -17,7 +17,7 @@ const Footer = () => {
           </h2>
         </div>
         <div>
-          <h2 className='text-gray-600 font-bold text-sm mr-8 absolute right-0 bottom-0'>Supported by joka enterprises</h2>
+          <h2 className='hidden lg:flex text-gray-600 font-bold text-sm mr-8 absolute right-0 bottom-0'>Supported by joka enterprises</h2>
         </div>
       </div>
     </div>
