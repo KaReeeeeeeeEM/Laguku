@@ -13,7 +13,7 @@ const Choices = () => {
         <Navbar />
 
 
-        <img src={artBottom} alt='art' className='w-1/3 -z-10 absolute bottom-0 left-0' />
+        <img src={artBottom} alt='art' className='w-1/3 -z-10 fixed bottom-0 left-0' />
         <Footer />
     </div>
   )
