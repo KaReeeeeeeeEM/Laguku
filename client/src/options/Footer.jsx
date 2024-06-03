@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      <div className='fixed flex justify-between items-center bg-white bottom-0 w-full'>
+    <div className='z-50 bg-white'>
+      <div className='fixed flex justify-between items-center bottom-0 w-full'>
         {/* <div>
           <h2 className='text-gray-800 text-xs font-extrabold flex md:hidden'>Copyright {new Date().getFullYear()} <br />
             Laguku by JoKareem 

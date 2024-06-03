@@ -33,7 +33,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div style={{ width: '100vw', height: 'auto', marginTop: '12rem' }}>
+    <div style={{ width: '100vw', height: 'auto', marginTop: '2rem' }}>
       <Chrono items={items} mode="VERTICAL_ALTERNATING" disableToolbar="true" activeItemIndex={1} />  
     </div>
   );

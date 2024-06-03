@@ -2,35 +2,37 @@ import React from "react";
 
 //images
 import { MicrophoneIcon, MusicalNoteIcon, CloudArrowUpIcon } from "@heroicons/react/24/outline";
-import headphones from "../img/headphones.png";
 
 const cardDetails = [
   {
+    key: 1,
     title: 'Upload Your Tracks',
     description: "Easily upload your music to our platform. We support various formats and provide a seamless experience for artists.",
     icon: <MicrophoneIcon className='w-1/2 text-gray-500' />
   },
   {
+    key: 2,
     title: 'Distribute to Platforms',
     description: "Reach a global audience by distributing your music to popular streaming platforms like Spotify, Apple Music, and more.",
     icon: <CloudArrowUpIcon className='w-1/2 text-gray-500' />
   },
   {
+    key: 3,
     title: 'Track Your Success',
     description: "Monitor your music's performance with our advanced analytics tools. Gain insights on plays, downloads, and earnings.",
     icon: <MusicalNoteIcon className='w-1/2 text-gray-500' />
   },
 ]
 
-const Test = () => {
+const DashboardHero = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-evenly px-4 mt-24">
-      {cardDetails.map(details => <Card title={details.title} description={details.description} icon={details.icon} />)}
+    <div className="flex flex-col lg:flex-row items-center justify-evenly px-4 mt-4">
+      {cardDetails.map(details => <Card key={details.key} title={details.title} description={details.description} icon={details.icon} />)}
     </div>
   )
 }
 
-export default Test;
+export default DashboardHero;
 
 const Card = ({title, description, icon}) =>{
   return (
