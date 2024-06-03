@@ -359,6 +359,7 @@ const columns = [
         <TrashIcon className="w-6 h-6 text-red-500 cursor-pointer" />
       </div>
     ),
+    width: '5%',
   },
 ];
 
@@ -511,7 +512,7 @@ const data = [
 
 
 
-const Test = () => {
+const SongUploadTable = () => {
     const [loading, setLoading] = useState(false);
 
     const onChange = (pagination, filters, sorter, extra) => {
@@ -521,7 +522,11 @@ const Test = () => {
       }, 500);
     };
 
-    return <Table columns={columns} dataSource={data} onChange={onChange} loading={loading} />;
+    return (
+        <div className='w-screen overflow-auto'>
+            <Table columns={columns} dataSource={data} onChange={onChange} loading={loading} />
+        </div>
+    );
 }
 
-export default Test;
+export default SongUploadTable;

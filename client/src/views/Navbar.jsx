@@ -24,7 +24,7 @@ const Navbar = () => {
     }
 
   return (
-    <div className='fixed top-0 w-full z-50 bg-white'>
+    <div className='fixed top-0 left-0 w-screen lg:w-full z-50 bg-white'>
         {/* On large and extra large devices only */}
         <div className="mt-3 w-full items-center hidden md:flex">
             <div className="w-48 mx-4 my-2 flex items-center">
