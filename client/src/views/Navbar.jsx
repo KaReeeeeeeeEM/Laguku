@@ -32,7 +32,7 @@ const Navbar = () => {
                 <h1 className='ml-6 text-lg font-bold'>User Id</h1>
             </div>
             <div className="w-1/2 flex text-md text-gray-800 justify-end">
-                <a href="#" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
+                <a href="/dashboard" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
                   <span>
                       <img src={home} alt='home' className='pr-2 w-6' />
                   </span>
@@ -50,7 +50,7 @@ const Navbar = () => {
                   </span>
                   Album
                 </a>
-                <a href="#" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
+                <a href="/uploads/songs" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
                   <span>
                     <img src={musicoutline} alt='home' className='pr-2 w-6' />
                   </span>
@@ -93,7 +93,7 @@ const Navbar = () => {
                     </svg>
                 </div>
                 <div className="w-full bg-purple-50 flex-col rounded items-start text-gray-800 text-sm px-4 py-4 mt-6 -mb-96 pt-12 justify-end hidden" id='links'>
-                  <a href="#" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
+                  <a href="/dashboard" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
                   <span>
                       <img src={home} alt='home' className='pr-2 w-6' />
                   </span>
@@ -111,7 +111,7 @@ const Navbar = () => {
                   </span>
                   Album
                 </a>
-                <a href="#" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
+                <a href="/uploads/songs" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
                   <span>
                     <img src={musicoutline} alt='home' className='pr-2 w-6' />
                   </span>
