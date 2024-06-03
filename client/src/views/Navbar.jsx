@@ -44,7 +44,7 @@ const Navbar = () => {
                   </span>
                   Artist
                 </a>
-                <a href="#" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
+                <a href="/uploads/albums" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
                   <span>
                     <img src={layersoutline} alt='home' className='pr-2 w-6' />
                   </span>
@@ -105,7 +105,7 @@ const Navbar = () => {
                   </span>
                   Artist
                 </a>
-                <a href="#" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
+                <a href="/uploads/albums" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
                   <span>
                     <img src={layersoutline} alt='home' className='pr-2 w-6' />
                   </span>

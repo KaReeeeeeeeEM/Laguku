@@ -11,6 +11,7 @@ import SignUp from './auth/SignUp';
 import Choices from './options/Choices';
 import Dashboard from './options/Dashboard';
 import SongUploads from './views/SongUploads';
+import AlbumUploads from './views/AlbumUploads';
 
 //testing comoonent
 import Test from './components/Test';
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/options" element={<Choices />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/uploads/songs" element={<SongUploads />} />
+          <Route path="/uploads/albums" element={<AlbumUploads />} />
           <Route path="/test" element={<Test />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
