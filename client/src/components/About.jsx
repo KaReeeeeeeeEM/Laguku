@@ -22,7 +22,7 @@ const About = () => {
         <PicCard img={image7} />  
     </div>
     <div className='mb-4 flex justify-center items-center'>
-        <a href="#">
+        <a href="/auth/signin">
             <button className='px-6 py-2 bg-purple-900 text-white text-lg font-bold rounded-full transition ease-in-out duration-700 hover:opacity-80'>
                 Explore Artist 
                 <span className='text-3xl ml-2'>&#8594;</span>    
