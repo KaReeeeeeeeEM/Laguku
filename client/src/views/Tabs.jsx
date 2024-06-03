@@ -26,5 +26,11 @@ const items = [
     children: 'Live',
   },
 ];
-const App = () => <Tabs defaultActiveKey="1" items={items} onChange={onChange} />;
-export default App;
+const TabsSection = () => {
+  return (
+    <div>
+      <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+    </div>
+    );
+}
+export default TabsSection;
