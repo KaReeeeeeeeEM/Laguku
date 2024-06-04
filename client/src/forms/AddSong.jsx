@@ -2,18 +2,11 @@ import React, { useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import {
   Button,
-  Cascader,
-  Checkbox,
-  ColorPicker,
   DatePicker,
   Form,
   Input,
-  InputNumber,
   Radio,
   Select,
-  Slider,
-  Switch,
-  TreeSelect,
   Upload,
 } from 'antd';
 const { RangePicker } = DatePicker;
@@ -24,7 +17,7 @@ const normFile = (e) => {
   }
   return e?.fileList;
 };
-const FormDisabledDemo = () => {
+const AddSong = ({back}) => {
   const [componentDisabled, setComponentDisabled] = useState(false);
   return (
     <>
@@ -155,11 +148,13 @@ const FormDisabledDemo = () => {
           <TextArea rows={4} />
         </Form.Item> */}
         <div className='flex justify-between items-center w-full px-12 mb-12'>
-          <Button className='border-none font-bold text-gray-700 text-lg'>
-            Cancel
-          </Button>
+          <a href='/uploads/songs'>
+            <Button className='border-none font-bold text-gray-700 text-lg'>
+                Cancel
+            </Button>
+          </a>
           
-          <Button className='bg-purple-600 font-bold text-white text-lg md:mr-64 h-10 w-24'>
+          <Button type='submit' className='bg-purple-600 font-bold text-white text-lg md:mr-64 h-10 w-24'>
             Create
           </Button>
       </div>
@@ -167,4 +162,4 @@ const FormDisabledDemo = () => {
     </>
   );
 };
-export default () => <FormDisabledDemo />;
+export default () => <AddSong />;

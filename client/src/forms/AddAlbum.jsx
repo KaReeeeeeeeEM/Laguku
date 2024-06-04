@@ -2,21 +2,13 @@ import React, { useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import {
   Button,
-  Cascader,
-  Checkbox,
-  ColorPicker,
   DatePicker,
   Form,
   Input,
-  InputNumber,
   Radio,
   Select,
-  Slider,
-  Switch,
-  TreeSelect,
   Upload,
 } from 'antd';
-const { RangePicker } = DatePicker;
 const { TextArea } = Input;
 const normFile = (e) => {
   if (Array.isArray(e)) {
@@ -24,12 +16,12 @@ const normFile = (e) => {
   }
   return e?.fileList;
 };
-const FormDisabledDemo = () => {
+const AddAlbum = ({back}) => {
   const [componentDisabled, setComponentDisabled] = useState(false);
   return (
     <>
       <h2 className='font-extrabold ml-4 md:ml-12 text-4xl mt-12 text-purple-600'>
-        Create Song
+        Create Album
       </h2>
       <Form
         labelCol={{
@@ -52,12 +44,12 @@ const FormDisabledDemo = () => {
       >
         <div className='md:flex items-center justify-between w-full'>
           <div className='w-full px-4 md:px-12 md:flex md:flex-col items-start justify-center'>
-            <h2 className='mb-2 font-extrabold flex align-start'>Song Name</h2>
+            <h2 className='mb-2 font-extrabold flex align-start'>Album Name</h2>
             <Form.Item className='w-full mb-6'>
               <Input className='border hover:border-purple-600 focus:border-purple-600' autoFocus />
            </Form.Item>
 
-          <h2 className='mb-2 font-extrabold flex align-start'>Song Name Original</h2>
+          <h2 className='mb-2 font-extrabold flex align-start'>Album Name Original</h2>
             <Form.Item className='w-full mb-6'>
               <Input className='border hover:border-purple-600 focus:border-purple-600' />
            </Form.Item>
@@ -94,12 +86,12 @@ const FormDisabledDemo = () => {
           <div className='w-full px-4 md:ml-24 md:flex md:flex-col items-center justify-center'>
             <Form.Item className='w-full mb-6'>
             <Radio.Group className='flex justify-between'>
-              <Radio value="Hit Song" className='text-blue-600'> Hit Song </Radio>
+              <Radio value="Hit Album" className='text-blue-600'> Hit Album </Radio>
               <Radio value="MP3 Download" className='text-blue-600'> MP3 Download </Radio>
             </Radio.Group>
             <Radio.Group className='flex justify-between'>
               <Radio value="Stream" className='text-blue-600'> Stream </Radio>
-              <Radio value="Main Song" className='text-blue-600'> Main Song </Radio>
+              <Radio value="Main Album" className='text-blue-600'> Main Album </Radio>
             </Radio.Group>
             <Radio.Group className='flex justify-between'>
               <Radio value="Adult Only" className='text-blue-600'> Adult Only </Radio>
@@ -155,11 +147,13 @@ const FormDisabledDemo = () => {
           <TextArea rows={4} />
         </Form.Item> */}
         <div className='flex justify-between items-center w-full px-12 mb-12'>
-          <Button className='border-none font-bold text-gray-700 text-lg'>
-            Cancel
-          </Button>
+          <a href='/uploads/albums'>
+            <Button className='border-none font-bold text-gray-700 text-lg'>
+                Cancel
+            </Button>
+          </a>
           
-          <Button className='bg-purple-600 font-bold text-white text-lg md:mr-64 h-10 w-24'>
+          <Button type='submit' className='bg-purple-600 font-bold text-white text-lg md:mr-64 h-10 w-24'>
             Create
           </Button>
       </div>
@@ -167,4 +161,4 @@ const FormDisabledDemo = () => {
     </>
   );
 };
-export default () => <FormDisabledDemo />;
+export default () => <AddAlbum />;
