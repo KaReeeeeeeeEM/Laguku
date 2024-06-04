@@ -1,9 +1,6 @@
 import React from "react";
 import { Chrono } from "react-chrono";
 
-//images
-import image from '../img/image.png';
-
 const Timeline = () => {
   const items = [
     {
