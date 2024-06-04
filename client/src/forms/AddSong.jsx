@@ -149,7 +149,7 @@ const AddSong = ({back}) => {
         </Form.Item> */}
         <div className='flex justify-between items-center w-full px-12 mb-12'>
           <a href='/uploads/songs'>
-            <Button className='border-none font-bold text-gray-700 text-lg'>
+            <Button className='border-none font-bold text-purple-700 text-lg'>
                 Cancel
             </Button>
           </a>

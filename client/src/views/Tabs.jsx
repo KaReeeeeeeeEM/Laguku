@@ -28,7 +28,7 @@ const items = [
 ];
 const TabsSection = () => {
   return (
-    <div>
+    <div className='pl-2 lg:px-2 lg:overflow-x-hidden'>
       <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
     </div>
     );
