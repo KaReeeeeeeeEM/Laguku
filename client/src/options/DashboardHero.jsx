@@ -42,7 +42,7 @@ const Card = ({title, description, icon, to}) =>{
   return (
     <Link to={to} className="lg:w-1/3 mt-4 lg:mt-0 lg:ml-4" >
       <div className="w-full bg-purple-200 h-48 p-4 flex flex-col items-left rounded-lg justify-center transition ease-in-out duration-500 hover:scale-105 cursor-pointer">
-        <h1 className="font-bold text-2xl text-gray-600">{title}</h1>
+        <h1 className="font-semibold text-2xl text-gray-600">{title}</h1>
         <div className="flex items-center justify-between">
           <p className="text-gray-700 w-2/3">{description}</p>
           <span className="w-1/3 h-full flex items-center justify-center">{icon}</span>
