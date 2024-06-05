@@ -10,7 +10,7 @@ const AlbumUploadBody = ({back}) => {
               Create Album
             </a>
         </div>
-        <div className='w-full lg:w-screen h-[720px] lg:h-full absolute left-0 mt-12 transition ease-in-out duration-500 hover:opacity-80 overflow-auto'>
+        <div className='w-full lg:w-screen h-[720px] lg:h-full absolute left-0 mt-8 lg:mt-12 transition ease-in-out duration-500 hover:opacity-80 overflow-auto'>
             <TabsSection />
         </div>
     </div>

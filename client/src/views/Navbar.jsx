@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="mt-3 w-full items-center hidden md:flex">
             <div className="w-48 mx-4 my-2 flex items-center">
                 <img src={Logo} alt='logo' className='w-12' />
-                <h1 className='ml-6 text-lg font-bold'>User Id</h1>
+                <h1 className='ml-6 text-lg font-bold'>Laguku.Id</h1>
             </div>
             <div className="w-1/2 flex text-md text-gray-800 justify-end">
                 <a href="/dashboard" className="p-2 flex transition ease-in-out duration-700 hover:text-purple-500">
@@ -85,7 +85,9 @@ const Navbar = () => {
             <div className="w-1/6 mx-4 my-2">
                 <img src={Logo} alt='logo' className='w-2/3' />
             </div>
-            
+            <button className="px-4 hover:text-purple-300 transition ease-in-out duration-700 text-gray-200 mx-6 absolute right-8 h-10 rounded">
+                <img src={bell} alt='#' className='w-6' />
+            </button>
             <div className='w-1/2 mx-4'>
                 <div onClick={openLinks}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 float-right cursor-pointer text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
