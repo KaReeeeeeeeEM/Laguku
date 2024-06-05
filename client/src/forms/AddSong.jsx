@@ -121,41 +121,18 @@ const AddSong = ({back}) => {
            </Form.Item>
 
            <Form.Item valuePropName="fileList" className='flex justify-between items-start w-full' getValueFromEvent={normFile}>
-          {/* <Upload action="/upload.do" className='w-full' listType="picture-card">
-            <button
-              style={{
-                border: 0,
-                background: 'none',
-                width: '100%'
-              }}
-              type="button"
-            >
-              <PlusOutlined />
-              <div
-                style={{
-                  marginTop: 8,
-                  color: 'blue',
-                }}
-              >
-                Browse
-              </div>
-            </button>
-          </Upload> */}
           <input type="file" name="audio-wav" id="audio-wav"  />
         </Form.Item>
           </div>
         </div>
-        {/* <Form.Item label="TextArea">
-          <TextArea rows={4} />
-        </Form.Item> */}
         <div className='flex justify-between items-center w-full px-12 mb-12'>
           <a href='/uploads/songs'>
-            <Button className='border-none font-semibold text-purple-700 text-lg'>
+            <Button className='border-none font-semibold text-purple-700 text-sm lg:text-lg'>
                 Cancel
             </Button>
           </a>
           
-          <Button type='submit' className='bg-purple-600 font-semibold text-white text-lg md:mr-64 h-9 w-24'>
+          <Button type='submit' className='bg-purple-600 font-semibold text-white text-sm lg:text-lg md:mr-64 h-9 w-24'>
             Create
           </Button>
       </div>
